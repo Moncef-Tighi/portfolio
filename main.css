@@ -40,9 +40,10 @@ header div {
     height: 38px;
     font-weight: 700;
     text-transform:uppercase;
+    cursor: pointer;
 }
 
 #header-name {
-    margin-left: 4vw;
+    margin-left: 2vw;
     font-size: 17px;
 }
