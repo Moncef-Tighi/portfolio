@@ -86,7 +86,7 @@ section {
     margin-left: -10px;
     left: 0;
     right: 0;
-    background: radial-gradient(#000000ab, #00000000),url("intro.png");
+    background: radial-gradient(#000000ab, #00000000),url("img/intro.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
