@@ -65,7 +65,7 @@ header div {
 }
 
 
-article {
+section {
     width: 100%;
     height: 100vh;
 }
@@ -113,11 +113,39 @@ article {
     letter-spacing: 5px;
     font-weight: 100;
 }
+
+
 #portfolio {
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
+article {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 1vw;
+    transition: 0.5s;
+}
+article:hover {
+    transform: scale(130%);
+}
+
+article img {
+    width: 21vw;
+}
+ 
+ul {
+    list-style: none;
+}
+
+.links img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
 
 
 
