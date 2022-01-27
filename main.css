@@ -50,7 +50,8 @@ header div {
     text-transform:uppercase;
     cursor: pointer;
     top: 0;
-    transition: 0.25s;
+    color: #6a6a6a;
+    transition: 0.35s;
 }
 
 #cv:hover {
@@ -69,14 +70,14 @@ article {
     height: 100vh;
 }
 
-#first {
+#introduction {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: auto;
     position: relative;
 }
-#first::before {
+#introduction::before {
     content: "";
     display: block;
     position: fixed;
@@ -85,34 +86,34 @@ article {
     margin-left: -10px;
     left: 0;
     right: 0;
-    background-image: url("intro.png");
+    background: radial-gradient(#000000ab, #00000000),url("intro.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     transition-duration: 1.3s;
 }
-#first:hover::before {
-    filter: blur(10px);
-    width: 112%;
-    height: 112%;
+#introduction:hover::before {
+    filter: blur(5px);
+    width: 111%;
+    height: 111%;
 
 }
-#first div {    
+#introduction div {    
     text-align: center;
     width: 37%;
 }
 
-#first div h3 {
+#introduction div h3 {
     text-align: justify;
     font-size: 1.2em;
     font-weight: 100;
 }
-#first div h1 {
+#introduction div h1 {
     font-size: 3em;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     font-weight: 100;
 }
-#second {
+#portfolio {
     background-color: white;
 }
 
@@ -124,6 +125,6 @@ article {
 
 
 
-#last {
+#contact {
     background-color: black;
 }
