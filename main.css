@@ -1,7 +1,15 @@
 body {
     margin: 0px;
     color: white;
+    font-family: "Helvetica";
 
+}
+
+a {
+    color: #02aeec;
+}
+a:hover {
+    color: #04649f;
 }
 header {
     display: flex;
@@ -12,7 +20,6 @@ header {
     background-color: white;
     border-bottom: 1px lightgray solid;
     align-items: center;
-    font-family: sans-serif;
     color: #6a6a6a;
     z-index: 3;
 }
@@ -43,6 +50,12 @@ header div {
     text-transform:uppercase;
     cursor: pointer;
     top: 0;
+    transition: 0.25s;
+}
+
+#cv:hover {
+    background-color: black;
+    color: white;
 }
 
 #header-name {
@@ -67,7 +80,7 @@ article {
     content: "";
     display: block;
     position: fixed;
-    height: 100%;
+    height: 110%;
     width: 110%;
     margin-left: -10px;
     left: 0;
@@ -75,14 +88,30 @@ article {
     background-image: url("intro.png");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px);
     z-index: -1;
+    transition-duration: 1.3s;
+}
+#first:hover::before {
+    filter: blur(10px);
+    width: 112%;
+    height: 112%;
 
 }
 #first div {    
-    z-index: 2;
+    text-align: center;
+    width: 37%;
 }
 
+#first div h3 {
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+#first div h1 {
+    font-size: 3em;
+    letter-spacing: 7px;
+    font-weight: 100;
+}
 #second {
     background-color: white;
 }
