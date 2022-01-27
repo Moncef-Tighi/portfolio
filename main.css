@@ -114,31 +114,50 @@ section {
     font-weight: 100;
 }
 
+#portfolio-section {
+    background-color: rgb(243, 243, 243);
+    align-items: center;
+    padding-top: 5vh ;
+}
+
+#portfolio-section h1 {
+    text-align: center;
+    margin-bottom: 6vh;
+    font-size: 2.9em;
+    color: #6a6a6a;
+    letter-spacing: 5px;
+}
 
 #portfolio {
-    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-evenly;
 }
 
 
 article {
-    background-color: lightgray;
+    background-color: white;
+    border: 1px #02aeec solid;
     border-radius: 5px;
     padding: 1vw;
     transition: 0.5s;
+    text-align: center;
+    color: #6a6a6a;
 }
 article:hover {
-    transform: scale(125%);
+    transform: scale(115%);
     z-index: 2;
 }
 
+article h2 {
+    margin: 10px;
+}
+
 article img {
-    width: 22vw;
+    width: 26vw;
 }
 article p {
-    width: 22vw;
+    width: 26vw;
     margin: 0;
     text-align: justify;
     white-space:pre-wrap;
@@ -150,17 +169,18 @@ article ul {
 .tags {
     border: none;
     text-transform: uppercase;
-    color: black;
+    color: #6a6a6a;
     display: flex;
     align-items: center;
     background-color: white;
     padding: 6px;
     margin-right: 3px;
     margin-left: 3px;
-    font-size: 0.8em;
-    min-width: 40px;
+    font-size: 0.9em;
+    min-width: 50px;
     place-content: center;
     border-radius: 10px;
+    border: 1px #6a6a6a solid;
 }
 ul {
     list-style: none;
@@ -170,12 +190,17 @@ ul {
 
 .links img {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    display: block;
 }
 
 
-
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+}
 
 
 
