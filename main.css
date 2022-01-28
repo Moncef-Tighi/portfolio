@@ -68,7 +68,7 @@ header div {
 section {
     width: 100%;
     height: fit-content;
-    min-height: 900px;
+    min-height: 100vh;
 }
 
 #introduction {
@@ -95,8 +95,8 @@ section {
 }
 #introduction:hover::before {
     filter: blur(5px);
-    width: 101%;
-    height: 101%;
+    width: 103%;
+    height: 103%;
 
 }
 #introduction div {    
@@ -138,7 +138,7 @@ section {
 
 article {
     background-color: white;
-    border: 1px #02aeec solid;
+    border: 1px #6a6a6a solid;
     border-radius: 5px;
     padding: 1vw;
     transition: 0.5s;
@@ -181,7 +181,9 @@ article ul {
     min-width: 50px;
     place-content: center;
     border-radius: 10px;
+    text-transform:none;
     border: 1px #6a6a6a solid;
+    font-weight: 600;
 }
 ul {
     list-style: none;
@@ -243,19 +245,19 @@ ul {
 */
 
 .node {
-    background-color: rgb(11, 255, 11);
+    background-color: rgb(71, 255, 55);
 }
 .express {
-    background-color: rgb(15, 179, 15);
+    background-color: rgb(14, 133, 34);
 }
 .socket {
-    background-color: rgb(167, 75, 167);
+    background-color: rgb(134, 51, 134);
 }
 .rest {
     background-color: orange;
 }
 .mongo {
-    background-color: greenyellow;
+    background-color: rgb(226, 230, 3);
 }
 .php {
     background-color: rgb(111, 0, 255);
