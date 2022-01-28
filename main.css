@@ -36,7 +36,7 @@ header div {
     padding-right: 50px;
 }
 
-#cv {
+button {
     color: inherit;
     font: inherit;
 	outline: inherit;
@@ -54,7 +54,7 @@ header div {
     transition: 0.35s;
 }
 
-#cv:hover {
+button:hover {
     background-color: black;
     color: white;
 }
@@ -211,6 +211,53 @@ ul {
 #contact {
     background-color: black;
 }
+#contact h1 {
+    margin:0;
+    font-size: 3em;
+    letter-spacing: 5px;
+    padding-top: 6vh;
+    padding-left: 7vh;
+}
+#addresse{
+    padding-top: 6vh;
+    padding-bottom: 4vh;
+    padding-left: 7vh;
+    padding-right: 6vh;
+    display: flex;
+    width:auto;
+    justify-content: space-between;
+    line-height: 8px;
+}
+#contact h3, #contact h2 {
+    font-weight: 300;
+}
+
+#form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input, textarea {
+    display: block;
+    background: #fff!important;
+    border: 1px solid #6a6a6a;
+    width: 90%;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 15px;
+}
+form {
+    text-align: center;
+}
+#contact button {
+    margin: auto;
+    border-radius: 15px;
+    color: #02aeec;
+    margin-bottom: 5vh;
+}
+
 
 @media only screen and (max-width: 800px) {
     #portfolio  {
