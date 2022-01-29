@@ -301,6 +301,23 @@ section {
         flex-direction: column;
     }
 }
+@media only screen and (max-width: 500px) {
+    header div img{
+        width: 30px;
+        height: 30px;
+    }
+    header div {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    #cv {
+        width: 90%;
+        margin-right:10px ;
+    }
+    
+}
 
 
 /*
