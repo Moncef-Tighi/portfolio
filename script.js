@@ -13,8 +13,8 @@ const observerCallback = function(entries, observer) {
 
 const parametres = {
     root : null, //On set à null parce qu'on veut observer le contact avec le viewport
-    threshold : 0.3,
-    rootMargin: "100px"
+    threshold : 0.2,
+    rootMargin: "50px"
 }
 
 const observer= new IntersectionObserver(observerCallback, parametres);

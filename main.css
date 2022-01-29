@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     color: white;
@@ -265,11 +269,11 @@ form {
 
 .section--hide {
     opacity: 0;
-    transform: translateY(5vh);
+    transform: translateY(50px);
 }
 
 section {
-    transition: transform 0.7s, opacity 1s;
+    transition: transform 1s, opacity 0.7s;
 }
 
 @media only screen and (max-width: 800px) {
