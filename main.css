@@ -2,7 +2,8 @@ body {
     margin: 0px;
     color: white;
     font-family: "Helvetica";
-
+    background: white;
+    overflow-x:hidden;
 }
 
 a {
@@ -75,7 +76,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
     position: relative;
 }
 #introduction::before {
@@ -259,6 +259,19 @@ form {
 }
 
 
+/*
+    CSS de l'animation scroll up
+*/
+
+.section--hide {
+    opacity: 0;
+    transform: translateY(5vh);
+}
+
+section {
+    transition: transform 0.7s, opacity 1s;
+}
+
 @media only screen and (max-width: 800px) {
     #portfolio  {
         display: block;
@@ -284,6 +297,9 @@ form {
     #introduction div h1 {
         letter-spacing: 2px;
     }    
+    #addresse {
+        flex-direction: column;
+    }
 }
 
 
