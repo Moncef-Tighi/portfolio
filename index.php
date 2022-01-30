@@ -108,7 +108,7 @@
                 echo "<h4 style='color:green;'>Votre email a bien été envoyé !</h4>";
             }
         ?>
-        <form action="mail.php">
+        <form action="mail.php" method="post">
             <input type="text" name="nom" placeholder="Votre nom">
             <input type="mail" name="email" placeholder="Adresse Email">
             <input type="text" name="titre" placeholder="Titre">
