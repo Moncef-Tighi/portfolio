@@ -103,12 +103,17 @@
 
     <div id="form">
         <h3>Formulaire pour me contacter rapidement : </h3>
-        <form action="">
-            <input type="text" name="nom" placeholder="Nom">
-            <input type="text" name="prenom" placeholder="Prenom">
+        <?php 
+            if(isset($_GET["mailsend"])) {
+                echo "<h4 style='color:green;'>Votre email a bien été envoyé !</h4>";
+            }
+        ?>
+        <form action="mail.php">
+            <input type="text" name="nom" placeholder="Votre nom">
             <input type="mail" name="email" placeholder="Adresse Email">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
+            <input type="text" name="titre" placeholder="Titre">
+            <textarea name="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+            <button name="submit" type="submit">Envoyer</button>
         </form>
     </div>
 
