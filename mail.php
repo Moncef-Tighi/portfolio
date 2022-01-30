@@ -38,5 +38,5 @@ if (isset($_POST["submit"])) {
 
 
     //mail($myEmail, $titre, $message, $header);
-    header("Location: index.html?mailsend#form");
+    header("Location: index.php?mailsend#form");
 }

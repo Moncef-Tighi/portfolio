@@ -103,6 +103,11 @@
 
     <div id="form">
         <h3>Formulaire pour me contacter rapidement : </h3>
+        <?php 
+            if(isset($_GET["mailsend"])) {
+                echo "<h4 style='color:green;'>Votre email a bien été envoyé !</h4>";
+            }
+        ?>
         <form action="mail.php" method="post">
             <input type="text" name="nom" placeholder="Votre nom">
             <input type="mail" name="email" placeholder="Adresse Email">
